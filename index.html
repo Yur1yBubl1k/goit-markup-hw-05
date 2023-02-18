@@ -25,13 +25,13 @@
             ><span class="web">Web</span>Studio</a
           >
           <ul class="sec-ul nav-block">
-            <li class="li-item">
+            <li class="li-item menu-link">
               <a href="./index.html" class="nav-li">Studio</a>
             </li>
-            <li class="li-item">
+            <li class="li-item menu-link">
               <a href="./portfolio.html" class="nav-li">Portfolio</a>
             </li>
-            <li class="li-item"><a href="" class="nav-li">Contacts</a></li>
+            <li class="li-item menu-link"><a href="" class="nav-li">Contacts</a></li>
           </ul>
         </nav>
         <address class="adress-block">
@@ -54,7 +54,7 @@
       <section class="hero background-img">
         <div class="container background-img">
           <h1 class="title">Effective Solutions for Your Business</h1>
-          <button type="button" class="button hero-but">Order Service</button>
+          <button type="button" class="button hero-but" data-modal-open>Order Service</button>
         </div>
       </section>
 
@@ -470,6 +470,17 @@
           </ul>
         </div>
       </div>
+
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="modal-but" data-modal-close> 
+           <svg class="modal-svg" width="8px" height="8px">
+            <use href="./images/symbol-defs 2.svg#icon-close-black-18dp-2-1-1"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
